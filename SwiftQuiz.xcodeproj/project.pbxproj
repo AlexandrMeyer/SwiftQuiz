@@ -13,6 +13,13 @@
 		B5F2486726EDFEDA0031811B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F2486526EDFEDA0031811B /* Main.storyboard */; };
 		B5F2486926EDFEDE0031811B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F2486826EDFEDE0031811B /* Assets.xcassets */; };
 		B5F2486C26EDFEDE0031811B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F2486A26EDFEDE0031811B /* LaunchScreen.storyboard */; };
+		B5F2487426EE1F5B0031811B /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2487326EE1F5B0031811B /* Questions.swift */; };
+		B5F2487726EE1FF30031811B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2487626EE1FF30031811B /* TabBarViewController.swift */; };
+		B5F2487A26EE20230031811B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2487926EE20230031811B /* ResultViewController.swift */; };
+		B5F2487C26EE203C0031811B /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2487B26EE203C0031811B /* HelpViewController.swift */; };
+		B5F2487E26EE208C0031811B /* RatingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2487D26EE208C0031811B /* RatingTableViewController.swift */; };
+		B5F2488326EE21680031811B /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2488226EE21680031811B /* QuestionViewController.swift */; };
+		B5F2488526EE21A00031811B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2488426EE21A00031811B /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		B5F2486826EDFEDE0031811B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F2486B26EDFEDE0031811B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F2486D26EDFEDE0031811B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F2487326EE1F5B0031811B /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		B5F2487626EE1FF30031811B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B5F2487926EE20230031811B /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		B5F2487B26EE203C0031811B /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		B5F2487D26EE208C0031811B /* RatingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingTableViewController.swift; sourceTree = "<group>"; };
+		B5F2488226EE21680031811B /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		B5F2488426EE21A00031811B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,70 @@
 		B5F2485E26EDFEDA0031811B /* SwiftQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				B5F2485F26EDFEDA0031811B /* AppDelegate.swift */,
-				B5F2486126EDFEDA0031811B /* SceneDelegate.swift */,
-				B5F2486326EDFEDA0031811B /* ViewController.swift */,
-				B5F2486526EDFEDA0031811B /* Main.storyboard */,
-				B5F2486826EDFEDE0031811B /* Assets.xcassets */,
-				B5F2486A26EDFEDE0031811B /* LaunchScreen.storyboard */,
-				B5F2486D26EDFEDE0031811B /* Info.plist */,
+				B5F2488126EE20CD0031811B /* App */,
+				B5F2487826EE1FF90031811B /* ViewControllers */,
+				B5F2488626EE21A90031811B /* Services */,
+				B5F2487526EE1F810031811B /* Models */,
+				B5F2487F26EE209C0031811B /* Storyboard */,
+				B5F2488026EE20C10031811B /* Resources */,
 			);
 			path = SwiftQuiz;
+			sourceTree = "<group>";
+		};
+		B5F2487526EE1F810031811B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5F2487326EE1F5B0031811B /* Questions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5F2487826EE1FF90031811B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5F2486326EDFEDA0031811B /* ViewController.swift */,
+				B5F2488226EE21680031811B /* QuestionViewController.swift */,
+				B5F2487626EE1FF30031811B /* TabBarViewController.swift */,
+				B5F2487926EE20230031811B /* ResultViewController.swift */,
+				B5F2487B26EE203C0031811B /* HelpViewController.swift */,
+				B5F2487D26EE208C0031811B /* RatingTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B5F2487F26EE209C0031811B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B5F2486526EDFEDA0031811B /* Main.storyboard */,
+				B5F2486A26EDFEDE0031811B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B5F2488026EE20C10031811B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5F2486826EDFEDE0031811B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B5F2488126EE20CD0031811B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B5F2486126EDFEDA0031811B /* SceneDelegate.swift */,
+				B5F2485F26EDFEDA0031811B /* AppDelegate.swift */,
+				B5F2486D26EDFEDE0031811B /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B5F2488626EE21A90031811B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B5F2488426EE21A00031811B /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +206,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F2487C26EE203C0031811B /* HelpViewController.swift in Sources */,
+				B5F2488526EE21A00031811B /* DataManager.swift in Sources */,
 				B5F2486426EDFEDA0031811B /* ViewController.swift in Sources */,
+				B5F2487426EE1F5B0031811B /* Questions.swift in Sources */,
 				B5F2486026EDFEDA0031811B /* AppDelegate.swift in Sources */,
+				B5F2487726EE1FF30031811B /* TabBarViewController.swift in Sources */,
 				B5F2486226EDFEDA0031811B /* SceneDelegate.swift in Sources */,
+				B5F2487E26EE208C0031811B /* RatingTableViewController.swift in Sources */,
+				B5F2487A26EE20230031811B /* ResultViewController.swift in Sources */,
+				B5F2488326EE21680031811B /* QuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ANDCT3J259;
-				INFOPLIST_FILE = SwiftQuiz/Info.plist;
+				INFOPLIST_FILE = SwiftQuiz/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +383,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ANDCT3J259;
-				INFOPLIST_FILE = SwiftQuiz/Info.plist;
+				INFOPLIST_FILE = SwiftQuiz/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
