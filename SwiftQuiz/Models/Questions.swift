@@ -9,15 +9,23 @@ struct Question {
     let title: String
     let answer: Answers
     
-    static func getFirstQuestion() -> Question {
-        let title = DataManager.shared.questions[0]
-        let answer = Answers(
-            title: DataManager.shared.firstAnswer.shuffled(),
-            correctAnswer: DataManager.shared.correctAnswers[0])
-
-        return Question(title: title, answer: answer)
+    static func getQuestions() -> [Question] {
+        var questions: [Question] = []
+        
+        for index in 0..<5 {
+            let qusetion = Question(
+                title: DataManager.shared.questions[index],
+                answer:
+                    Answers(
+                        title: DataManager.shared.answers[index].shuffled(),
+                        correctAnswer: DataManager.shared.correctAnswers[index]
+                    )
+            )
+            questions.append(qusetion)
+        }
+        
+        return questions
     }
-    
 }
 
 struct Answers {
