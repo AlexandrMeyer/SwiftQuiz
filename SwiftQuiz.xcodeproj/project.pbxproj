@@ -37,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		126D1F0126EFE06C00D2FA50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5F2486826EDFEDE0031811B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B5F2485326EDFEDA0031811B = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +68,7 @@
 				B5F2486126EDFEDA0031811B /* SceneDelegate.swift */,
 				B5F2486326EDFEDA0031811B /* ViewController.swift */,
 				BFDA4C2726EFDEE20090751D /* Storyboards */,
-				B5F2486826EDFEDE0031811B /* Assets.xcassets */,
+				126D1F0126EFE06C00D2FA50 /* Resources */,
 				B5F2486D26EDFEDE0031811B /* Info.plist */,
 			);
 			path = SwiftQuiz;
