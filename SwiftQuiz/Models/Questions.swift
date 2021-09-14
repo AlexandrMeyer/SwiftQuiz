@@ -7,7 +7,7 @@
 
 struct Question {
     let title: String
-    let answer: Answers
+    let answers: Answers
     
     static func getQuestions() -> [Question] {
         var questions: [Question] = []
@@ -15,7 +15,7 @@ struct Question {
         for index in 0..<5 {
             let qusetion = Question(
                 title: DataManager.shared.questions[index],
-                answer:
+                answers:
                     Answers(
                         title: DataManager.shared.answers[index].shuffled(),
                         correctAnswer: DataManager.shared.correctAnswers[index]
@@ -23,7 +23,6 @@ struct Question {
             )
             questions.append(qusetion)
         }
-        
         return questions
     }
 }
