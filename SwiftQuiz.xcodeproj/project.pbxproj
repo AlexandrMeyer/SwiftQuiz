@@ -58,19 +58,10 @@
 			children = (
 				B5F2488126EE20CD0031811B /* App */,
 				B5F2487826EE1FF90031811B /* ViewControllers */,
-				B5F2488626EE21A90031811B /* Services */,
-				B5F2487526EE1F810031811B /* Models */,
 				B5F2487F26EE209C0031811B /* Storyboard */,
 				B5F2488026EE20C10031811B /* Resources */,
 			);
 			path = SwiftQuiz;
-			sourceTree = "<group>";
-		};
-		B5F2487526EE1F810031811B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		B5F2487826EE1FF90031811B /* ViewControllers */ = {
@@ -106,13 +97,6 @@
 				B5F2486D26EDFEDE0031811B /* Info.plist */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		B5F2488626EE21A90031811B /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
