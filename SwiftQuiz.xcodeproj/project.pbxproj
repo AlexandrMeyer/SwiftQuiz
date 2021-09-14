@@ -45,6 +45,38 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B53AF35D26F1179D00EBFD88 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B5F2485F26EDFEDA0031811B /* AppDelegate.swift */,
+				B5F2486126EDFEDA0031811B /* SceneDelegate.swift */,
+				B5F2486D26EDFEDE0031811B /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B53AF35E26F117A600EBFD88 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5F2486326EDFEDA0031811B /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B53AF35F26F117CF00EBFD88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B53AF36026F117DA00EBFD88 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		B5F2485326EDFEDA0031811B = {
 			isa = PBXGroup;
 			children = (
@@ -64,12 +96,12 @@
 		B5F2485E26EDFEDA0031811B /* SwiftQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				B5F2485F26EDFEDA0031811B /* AppDelegate.swift */,
-				B5F2486126EDFEDA0031811B /* SceneDelegate.swift */,
-				B5F2486326EDFEDA0031811B /* ViewController.swift */,
+				B53AF36026F117DA00EBFD88 /* Services */,
+				B53AF35F26F117CF00EBFD88 /* Models */,
+				B53AF35D26F1179D00EBFD88 /* App */,
+				B53AF35E26F117A600EBFD88 /* ViewControllers */,
 				BFDA4C2726EFDEE20090751D /* Storyboards */,
 				126D1F0126EFE06C00D2FA50 /* Resources */,
-				B5F2486D26EDFEDE0031811B /* Info.plist */,
 			);
 			path = SwiftQuiz;
 			sourceTree = "<group>";
@@ -304,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ANDCT3J259;
-				INFOPLIST_FILE = SwiftQuiz/Info.plist;
+				INFOPLIST_FILE = SwiftQuiz/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ANDCT3J259;
-				INFOPLIST_FILE = SwiftQuiz/Info.plist;
+				INFOPLIST_FILE = SwiftQuiz/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
