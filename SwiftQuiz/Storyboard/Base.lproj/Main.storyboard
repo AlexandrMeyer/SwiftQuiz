@@ -58,6 +58,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qM9-QY-f92">
                                 <rect key="frame" x="16" y="58" width="288" height="227"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -114,7 +115,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KCs-cU-qPA"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="6Tc-9n-BM1" firstAttribute="centerX" secondItem="rbj-AR-Jk2" secondAttribute="centerX" id="0ZY-mA-ENP"/>
                             <constraint firstItem="E7Z-aO-84o" firstAttribute="leading" secondItem="KCs-cU-qPA" secondAttribute="leading" constant="16" id="6Ik-2j-12u"/>
@@ -132,7 +133,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5tX-d9-iJW">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="KGh-z5-NaG"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="OBs-V2-YYg">
                             <connections>
                                 <action selector="hintButtonTapped:" destination="lZa-yH-yEM" id="JhJ-sa-Imn"/>
@@ -140,7 +140,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="progressBarButton" destination="KGh-z5-NaG" id="p2F-1U-aKa"/>
                         <outlet property="progressView" destination="E7Z-aO-84o" id="FQu-Fl-CHO"/>
                         <outlet property="questionLabel" destination="qM9-QY-f92" id="HrC-fq-VMH"/>
                         <outletCollection property="answersButton" destination="bZg-xY-lxx" collectionClass="NSMutableArray" id="U0P-Wd-P4l"/>
@@ -293,6 +292,9 @@
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

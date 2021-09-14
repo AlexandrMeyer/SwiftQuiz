@@ -15,11 +15,9 @@ class QuestionViewController: UIViewController {
     
     @IBOutlet var answersButton: [UIButton]!
     
-    @IBOutlet var progressBarButton: UIBarButtonItem!
-    
     private let questions = Question.getQuestions()
     private var questionIndex = 0
-    private var answersChosen: [Answers] = []
+    private var answersChosen: [String] = []
     private var currentAnswers: Answers {
         questions[questionIndex].answers
     }
@@ -27,6 +25,8 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        view.backgroundColor = .systemGray6
+        questionLabel.backgroundColor = .white
     }
     
     override func viewWillLayoutSubviews() {
@@ -34,6 +34,10 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func answerButtonsTapper(_ sender: UIButton) {
+        guard let buttonIndex = answersButton.firstIndex(of: sender) else { return }
+        let currentAnswer = currentAnswers.title[buttonIndex]
+        answersChosen.append(currentAnswer)
+        
         updateUI()
         nextQuestion()
     }
@@ -44,15 +48,16 @@ class QuestionViewController: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //        guard let resultVC = segue.destination as? ResultViewController else { return }
-        
+//        guard let resultVC = segue.destination as? ResultViewController else { return }
+//        resultVC. = answersChosen
+//        resultVC. = questions
     }
 }
 
 extension QuestionViewController {
     
     private func updateUI() {
-        
+
         title = "Вопрос \(questionIndex + 1)/\(questions.count)"
         
         let currentQuestion = questions[questionIndex]
@@ -97,5 +102,4 @@ extension QuestionViewController {
         alertController.addAction(OkAction)
         present(alertController, animated: true, completion: nil)
     }
-    
 }
